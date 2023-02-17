@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Tarea 1 de la materia JavaScript">
+    <meta name="autor" content="Germán Matheus">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Germán Matheus</title>
+</head>
+<body>
+   
+    <form action="">
+        <label for="lista_ejercicios">Seleccione el ejercicio</label>
+        <select name="lista_ejercicios" id="lista_ejercicios">
+            <option value="1">Ejercicio 1</option>
+            <option value="2">Ejercicio 2</option>
+            <option value="3">Ejercicio 3</option>
+        </select>
+        <button type="button" onclick="handleSubmit()">Empezar</button>
+    </form>
+     <script src="./scripts/ejercicio1.js"></script>
+    <script src="./scripts/ejercicio2.js"></script>
+    <script src="./scripts/ejercicio3.js"></script>
+    <script>
+        function handleSubmit(){
+            let select = document.querySelector('select')
+            let opt  = select.options[select.selectedIndex].value;
+            
+           switch (opt){
+                case '1':
+                    ejercicio1()
+                    break;
+                case '2':
+                    alert('Opcion 2');
+                    break;
+                case '3':
+                    alert('opcion 3')
+                    break;
+                default:
+                    alert('algo pasó :(')
+           }
+        }
+    </script>
+   
+
+    
+</body>
+</html>
