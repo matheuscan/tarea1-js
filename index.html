@@ -27,18 +27,20 @@
             let select = document.querySelector('select')
             let opt  = select.options[select.selectedIndex].value;
             
+            alert(opt)
            switch (opt){
                 case '1':
                     ejercicio1()
                     break;
                 case '2':
-                    alert('Opcion 2');
+                    ejercicio2()
                     break;
                 case '3':
-                    alert('opcion 3')
+                    ejercicio3()
                     break;
                 default:
                     alert('algo pasó :(')
+                    break;
            }
         }
     </script>
